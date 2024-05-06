@@ -33,3 +33,8 @@ The core of the application lies in its ability to change the iframe's source dy
 
 ```html
 <button class="bear-button" onclick="changePreview('https://example.com')">Load Example.com</button>
+
+### JavaScript
+
+The changePreview function changes the source of the iframe, allowing the user to view different content:
+<img width="718" alt="Screenshot 2024-05-06 at 11 46 08" src="https://github.com/Peppecoding/Interactive-Preview-Application/assets/83593668/72e38ab8-21e9-4ff0-9b1d-b67cc2957bcc">
