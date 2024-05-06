@@ -34,7 +34,34 @@ The core of the application lies in its ability to change the iframe's source dy
 ```html
 <button class="bear-button" onclick="changePreview('https://example.com')">Load Example.com</button>
 
-### JavaScript
+## JavaScript
 
-The changePreview function changes the source of the iframe, allowing the user to view different content:
-<img width="718" alt="Screenshot 2024-05-06 at 11 46 08" src="https://github.com/Peppecoding/Interactive-Preview-Application/assets/83593668/72e38ab8-21e9-4ff0-9b1d-b67cc2957bcc">
+The `changePreview` function changes the source of the iframe, allowing the user to view different content:
+
+```javascript
+function changePreview(url) {
+    document.getElementById('previewFrame').src = url;
+}
+
+## CSS
+
+Responsive design is critical for modern web applications. Media queries are used to adjust the layout according to different device widths:
+
+```css
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    #previewFrame {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+## Contact
+
+- **LinkedIn:** [Giuseppe Mendoza Noto](https://www.linkedin.com/in/giuseppe-mendoza-noto)
+
+Feel free to reach out to me on LinkedIn for any questions about the project or potential collaborations.
+
+This excerpt from your README provides instructions on responsive design and offers a clear way for people to contact you for further inquiries or potential collaborations. Make sure you use the correct link to your LinkedIn profile to facilitate connections.
