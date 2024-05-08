@@ -98,10 +98,44 @@ h1 {
     animation: shine 2s infinite;
 }
 
+.url-input {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #8a2be2;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.instruction {
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.instruction ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.instruction li {
+    margin-bottom: 10px;
+}
+
+.instruction code {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: bold;
+}
 
 @media (max-width: 1020px) {
     .container {
-        width: 1020px; 
+        width: 1020px;
         padding: 10px;
     }
     #previewFrame {
@@ -109,7 +143,7 @@ h1 {
         overflow-x: auto;
     }
     .link-container {
-        width: 100%; 
+        width: 100%;
     }
 }
 
