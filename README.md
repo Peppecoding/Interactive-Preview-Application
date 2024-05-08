@@ -1,54 +1,63 @@
-# Interactive Preview Project
+# Interactive Preview
 
-This repository contains the source code for a web-based application that provides an interactive preview feature. This application allows users to switch between different URLs displayed within an iframe. This is particularly useful for showcasing projects like the Media Collage Generator, Rock Paper Scissors Johnson Edition, and other web pages directly within the same window.
+This repository contains a web-based application designed to provide an interactive preview of various URLs within an iframe. Users can select predefined URLs from buttons or enter their own URL to display content dynamically.
 
 ## Features
 
-- **Dynamic URL Loading**: Change the content displayed in the iframe dynamically with the click of a button.
-- **Responsive Design**: The interface adapts to different screen sizes, ensuring it works well on both desktop and mobile devices.
-- **Animated Interface**: Utilizes CSS animations to enhance the UI/UX.
+- **Dynamic Content Loading**: Change the content displayed in the iframe dynamically by clicking buttons or entering a URL.
+- **Responsive Design**: The interface adapts to different screen sizes, ensuring functionality across both desktop and mobile devices.
+- **Animated Interface**: Uses CSS animations to enhance user interaction.
 
 ## File Structure
 
-Below is an overview of the main files in the repository:
-
-- `index.html`: The main HTML document.
-- `styles.css`: Contains all the style definitions used across the project.
-- `script.js`: JavaScript file that contains the logic to update the iframe's `src` attribute.
+- `index.html` - The main HTML document.
+- `styles.css` - Contains all the style definitions used in the project.
+- `script.js` - JavaScript file that manages the iframe source changes based on user interaction.
 
 ## How It Works
 
 ### HTML
 
-The `index.html` file sets up the structure of the project, including the iframe and button options that allow users to change the content being previewed.
+The main structure is set up in `index.html`, which includes the iframe, buttons for predefined URLs, and an input field for custom URLs.
 
 ### CSS
 
-`styles.css` defines the styles for the project. It includes:
-- Styling for the container and preview section.
-- Responsive breakpoints for adapting to different device screens.
+`styles.css` defines the visual aspects of the project, including:
+- Styles for containers and buttons.
+- Responsive design features for optimal viewing on different devices.
 - Animation effects for interactive elements.
 
 ### JavaScript
 
-`script.js` includes the function `changePreview(url)`, which updates the `src` attribute of the iframe, allowing the displayed content to change based on the button clicked by the user.
+`script.js` includes functions to update the iframe's source based on predefined buttons or a user-input URL:
+- `changePreview(url)`: Updates the iframe source to the specified URL.
+- `changePreviewFromInput()`: Fetches the URL from the input field and updates the iframe source accordingly.
 
 ## Usage
 
 1. Clone this repository to your local machine.
-2. Open `index.html` in a modern web browser to view the project.
+2. Open `index.html` in a modern web browser to view and interact with the project.
 
 ## Contributing
 
-Contributions to improve the project are welcome. Before contributing, please ensure your pull requests are well-documented.
+Feel free to contribute to this project by submitting pull requests or suggesting features.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Example URLs to Embed
+
+Here are some example URLs that typically allow iframe embedding:
+- Alamy - Barquisimeto Map: `https://www.alamy.com/stock-photo/barquisimeto-map.html?sortBy=relevant`
+- Open Library: `https://openlibrary.org`
+- Wikipedia - Barquisimeto: `https://en.wikipedia.org/wiki/Barquisimeto`
+
+Please note that some sites may have restrictions that prevent them from being displayed properly in an iframe. Always check the site's policies on embedding content if unsure.
+
 ## Contact
 
-For any further queries or feedback, please contact [Peppecoding](https://github.com/Peppecoding).
+For any questions or feedback, feel free to contact [Peppecoding](https://github.com/Peppecoding).
 
 ## Acknowledgments
 
