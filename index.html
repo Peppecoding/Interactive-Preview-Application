@@ -21,6 +21,22 @@
             <button class="bear-button" onclick="changePreview('https://peppecoding.github.io/RockPaperScissorsJohnsonEdition/')">Rock Paper Scissors Johnson Edition</button>
             <button class="bear-button" onclick="changePreview('https://en.wikipedia.org/wiki/Main_Page')">Wikipedia</button>
         </div>
+
+        <div class="options-container">
+            <!-- Existing buttons here -->
+            <input type="text" id="urlInput" placeholder="Enter a URL to preview (e.g., Wikipedia)" class="url-input">
+            <button class="bear-button" onclick="changePreviewFromInput()">Load URL</button>
+        </div>
+        <div class="instruction">
+            <p>Please enter URLs that do not have restrictions on being displayed within an iframe. For your convenience, here are some examples that typically allow iframe embedding. You can copy and paste these URLs into the input field:</p>
+            <ul>
+                <li>Alamy - Barquisimeto Map: <code>https://www.alamy.com/stock-photo/barquisimeto-map.html?sortBy=relevant</code></li>
+                <li>Open Library: <code>https://openlibrary.org</code></li>
+                <li>Wikipedia - Barquisimeto: <code>https://en.wikipedia.org/wiki/Barquisimeto</code></li>
+            </ul>
+            <p>Note: Some sites may have restrictions that prevent them from being displayed properly in an iframe. Always check the site's policies on embedding content if unsure.</p>
+        </div>
+        
     </div>
 
     <div class="link-container">
