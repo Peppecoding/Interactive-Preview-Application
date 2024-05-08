@@ -1,67 +1,57 @@
-# Interactive Preview Application
+# Interactive Preview Project
 
-## Description
-
-This repository hosts an interactive preview application designed to showcase various web projects and media content dynamically. The main feature of this application is an embedded iframe that can display different websites based on user interaction with button controls.
+This repository contains the source code for a web-based application that provides an interactive preview feature. This application allows users to switch between different URLs displayed within an iframe. This is particularly useful for showcasing projects like the Media Collage Generator, Rock Paper Scissors Johnson Edition, and other web pages directly within the same window.
 
 ## Features
 
-- **Dynamic Iframe Content:** Users can switch the content displayed in the iframe by clicking on different buttons, each representing a different website or project.
-- **Responsive Design:** The application layout adjusts based on the screen size, ensuring a good user experience on both desktop and mobile devices.
-- **Animated UI Elements:** Utilizes CSS animations to enhance the visual appearance and interactivity of the webpage.
+- **Dynamic URL Loading**: Change the content displayed in the iframe dynamically with the click of a button.
+- **Responsive Design**: The interface adapts to different screen sizes, ensuring it works well on both desktop and mobile devices.
+- **Animated Interface**: Utilizes CSS animations to enhance the UI/UX.
 
-## Technologies Used
+## File Structure
 
-- **HTML5** for structuring the web page.
-- **CSS3** for styling, including gradients, animations, and media queries to ensure the site is fully responsive.
-- **JavaScript** for dynamic behaviors such as changing iframe sources.
+Below is an overview of the main files in the repository:
 
-## Setup
+- `index.html`: The main HTML document.
+- `styles.css`: Contains all the style definitions used across the project.
+- `script.js`: JavaScript file that contains the logic to update the iframe's `src` attribute.
 
-To run this project locally:
-
-1. Clone the repository to your local machine.
-2. Open the `index.html` file in your web browser.
-
-## Code Snippets
-
-Here's a brief overview of the core functionality:
+## How It Works
 
 ### HTML
 
-The core of the application lies in its ability to change the iframe's source dynamically. This is implemented using simple button elements that trigger a JavaScript function:
+The `index.html` file sets up the structure of the project, including the iframe and button options that allow users to change the content being previewed.
 
-```html
-<button class="bear-button" onclick="changePreview('https://example.com')">Load Example.com</button>
+### CSS
 
-## JavaScript
+`styles.css` defines the styles for the project. It includes:
+- Styling for the container and preview section.
+- Responsive breakpoints for adapting to different device screens.
+- Animation effects for interactive elements.
 
-The `changePreview` function changes the source of the iframe, allowing the user to view different content:
+### JavaScript
 
-```javascript
-function changePreview(url) {
-    document.getElementById('previewFrame').src = url;
-}
+`script.js` includes the function `changePreview(url)`, which updates the `src` attribute of the iframe, allowing the displayed content to change based on the button clicked by the user.
 
-## CSS
+## Usage
 
-Responsive design is critical for modern web applications. Media queries are used to adjust the layout according to different device widths:
+1. Clone this repository to your local machine.
+2. Open `index.html` in a modern web browser to view the project.
 
-```css
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-    #previewFrame {
-        width: 100%;
-        height: 300px;
-    }
-}
+## Contributing
+
+Contributions to improve the project are welcome. Before contributing, please ensure your pull requests are well-documented.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-- **LinkedIn:** [Giuseppe Mendoza Noto](https://www.linkedin.com/in/giuseppe-mendoza-noto)
+For any further queries or feedback, please contact [Peppecoding](https://github.com/Peppecoding).
 
-Feel free to reach out to me on LinkedIn for any questions about the project or potential collaborations.
+## Acknowledgments
 
-This excerpt from your README provides instructions on responsive design and offers a clear way for people to contact you for further inquiries or potential collaborations. Make sure you use the correct link to your LinkedIn profile to facilitate connections.
+- Media Collage Generator: [View Project](https://peppecoding.github.io/Media-Collage-Generator/)
+- Rock Paper Scissors Johnson Edition: [View Project](https://peppecoding.github.io/RockPaperScissorsJohnsonEdition/)
+- Wikipedia: [View Page](https://en.wikipedia.org/wiki/Main_Page)
