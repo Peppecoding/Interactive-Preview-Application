@@ -1,0 +1,129 @@
+.container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(to right, #8a2be2, #daa520);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#previewFrame {
+    margin-left: 10%;
+    width: 1000px;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.options-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bear-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff69b4;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+}
+
+.bear-button:hover {
+    background-color: #db7093;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 10px;
+    background: linear-gradient(to right, #00bfff, #ff6347);
+    width: 500px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.centered-link {
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+@keyframes animateTitle {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: animateTitle 1s ease-in-out forwards;
+    color: #ffffff;
+}
+
+@keyframes shine {
+    0% {
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        color: #ffffff;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+h1 {
+    animation: shine 2s infinite;
+}
+
+
+@media (max-width: 1020px) {
+    .container {
+        width: 1020px; 
+        padding: 10px;
+    }
+    #previewFrame {
+        margin-left: 2%;
+        overflow-x: auto;
+    }
+    .link-container {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .preview-section {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+        overflow-x: auto;
+    }
+    .bear-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
